@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results retried="2" ignored="0" total="3" passed="0" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-12-12T10:52:40 EST" name="Suite" finished-at="2025-12-12T10:53:15 EST" duration-ms="35700">
+    <groups>
+    </groups>
+    <test started-at="2025-12-12T10:52:40 EST" name="ScreenShootTest" finished-at="2025-12-12T10:53:15 EST" duration-ms="35700">
+      <class name="Ecommerce.ScreenShootLoginErrorValidationTest">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:Ecommerce.ScreenShootLoginErrorValidationTest@7fb9f71f]" started-at="2025-12-12T10:52:40 EST" name="launchApplication" finished-at="2025-12-12T10:52:53 EST" duration-ms="12700" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method retried="true" signature="loginErrorValidationTest(java.util.HashMap)[pri:0, instance:Ecommerce.ScreenShootLoginErrorValidationTest@7fb9f71f]" started-at="2025-12-12T10:52:53 EST" name="loginErrorValidationTest" data-provider="loginErrorData" finished-at="2025-12-12T10:52:53 EST" duration-ms="317" status="SKIP">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{userPassword=SomePassword123, userEmail=invalidEmailFormat, expectedError=*Enter Valid Email, errorType=textbox}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [We forsely fail the funtion to take the screenshot] but found [*Enter Valid Email]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [We forsely fail the funtion to take the screenshot] but found [*Enter Valid Email]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at org.testng.Assert.assertEquals(Assert.java:666)
+at Ecommerce.ScreenShootLoginErrorValidationTest.loginErrorValidationTest(ScreenShootLoginErrorValidationTest.java:76)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1575)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginErrorValidationTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Ecommerce.ScreenShootLoginErrorValidationTest@7fb9f71f]" started-at="2025-12-12T10:52:53 EST" name="tearDown" finished-at="2025-12-12T10:52:54 EST" duration-ms="1177" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:Ecommerce.ScreenShootLoginErrorValidationTest@7fb9f71f]" started-at="2025-12-12T10:52:54 EST" name="launchApplication" finished-at="2025-12-12T10:53:03 EST" duration-ms="8904" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method retried="true" signature="loginErrorValidationTest(java.util.HashMap)[pri:0, instance:Ecommerce.ScreenShootLoginErrorValidationTest@7fb9f71f]" started-at="2025-12-12T10:53:03 EST" name="loginErrorValidationTest" data-provider="loginErrorData" finished-at="2025-12-12T10:53:03 EST" duration-ms="341" status="SKIP">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{userPassword=SomePassword123, userEmail=invalidEmailFormat, expectedError=*Enter Valid Email, errorType=textbox}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [We forsely fail the funtion to take the screenshot] but found [*Enter Valid Email]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [We forsely fail the funtion to take the screenshot] but found [*Enter Valid Email]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at org.testng.Assert.assertEquals(Assert.java:666)
+at Ecommerce.ScreenShootLoginErrorValidationTest.loginErrorValidationTest(ScreenShootLoginErrorValidationTest.java:76)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1575)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginErrorValidationTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Ecommerce.ScreenShootLoginErrorValidationTest@7fb9f71f]" started-at="2025-12-12T10:53:03 EST" name="tearDown" finished-at="2025-12-12T10:53:05 EST" duration-ms="1219" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:Ecommerce.ScreenShootLoginErrorValidationTest@7fb9f71f]" started-at="2025-12-12T10:53:05 EST" name="launchApplication" finished-at="2025-12-12T10:53:14 EST" duration-ms="9042" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="loginErrorValidationTest(java.util.HashMap)[pri:0, instance:Ecommerce.ScreenShootLoginErrorValidationTest@7fb9f71f]" started-at="2025-12-12T10:53:14 EST" name="loginErrorValidationTest" data-provider="loginErrorData" finished-at="2025-12-12T10:53:14 EST" duration-ms="285" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{userPassword=SomePassword123, userEmail=invalidEmailFormat, expectedError=*Enter Valid Email, errorType=textbox}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [We forsely fail the funtion to take the screenshot] but found [*Enter Valid Email]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [We forsely fail the funtion to take the screenshot] but found [*Enter Valid Email]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at org.testng.Assert.assertEquals(Assert.java:666)
+at Ecommerce.ScreenShootLoginErrorValidationTest.loginErrorValidationTest(ScreenShootLoginErrorValidationTest.java:76)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1575)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginErrorValidationTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Ecommerce.ScreenShootLoginErrorValidationTest@7fb9f71f]" started-at="2025-12-12T10:53:14 EST" name="tearDown" finished-at="2025-12-12T10:53:15 EST" duration-ms="1150" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Ecommerce.ScreenShootLoginErrorValidationTest -->
+    </test> <!-- ScreenShootTest -->
+  </suite> <!-- Suite -->
+</testng-results>

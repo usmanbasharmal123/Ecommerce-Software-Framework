@@ -1,0 +1,6 @@
+[
+ {"userEmail":"usman.basharmal123@gmail.com", "userPassword":"R@hulshetty.123644444", "expectedError":"Incorrect email or password.","errorType":"flyinOut" },
+            { "userEmail":"", "userPassword":"","expectedError":"*Email is required", "errorType":"textbox" },
+            {"userEmail": "invalidEmailFormat", "userPassword":"SomePassword123", "expectedError":"*Enter Valid Email","errorType":"textbox" }
+]
+
