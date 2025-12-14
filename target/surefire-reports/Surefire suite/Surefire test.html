@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>TestNG:  ScreenShootTest</title>
+<title>TestNG:  Surefire test</title>
 <link href="../testng.css" rel="stylesheet" type="text/css" />
 <link href="../my-testng.css" rel="stylesheet" type="text/css" />
 
@@ -53,13 +53,13 @@ function toggleAllBoxes() {
 
 </head>
 <body>
-<h2 align='center'>ScreenShootTest</h2><table border='1' align="center">
+<h2 align='center'>Surefire test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/1/2</td>
+<td>Tests passed/Failed/Skipped:</td><td>5/1/2</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Dec 12 12:28:54 EST 2025</td>
+<td>Started on:</td><td>Fri Dec 12 11:23:22 EST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>31 seconds (31284 ms)</td>
+<tr><td>Total time:</td><td>95 seconds (95740 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -80,12 +80,8 @@ function toggleAllBoxes() {
 <td><div><pre>java.lang.AssertionError: expected [We forsely fail the funtion to take the screenshot] but found [*Enter Valid Email]
 	at Ecommerce.ScreenShootLoginErrorValidationTest.loginErrorValidationTest(ScreenShootLoginErrorValidationTest.java:76)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1575)
-... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1872079322", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1872079322'><pre>java.lang.AssertionError: expected [We forsely fail the funtion to take the screenshot] but found [*Enter Valid Email]
+... Removed 36 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1466662004", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1466662004'><pre>java.lang.AssertionError: expected [We forsely fail the funtion to take the screenshot] but found [*Enter Valid Email]
 	at org.testng.Assert.fail(Assert.java:111)
 	at org.testng.Assert.failNotEquals(Assert.java:1590)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
@@ -107,15 +103,60 @@ function toggleAllBoxes() {
 	at org.testng.TestRunner.privateRun(TestRunner.java:741)
 	at org.testng.TestRunner.run(TestRunner.java:616)
 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
-	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1575)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 </pre></div></td>
 <td>0</td>
-<td>Ecommerce.ScreenShootLoginErrorValidationTest@5489c777</td></tr>
+<td>Ecommerce.ScreenShootLoginErrorValidationTest@a202ccb</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Ecommerce.LoginErrorValidationTest.loginErrorValidationTest()'><b>loginErrorValidationTest</b><br>Test class: Ecommerce.LoginErrorValidationTest<br>Parameters: {userPassword=, userEmail=, expectedError=*Email is required, errorType=textbox}</td>
+<td></td>
+<td>0</td>
+<td>Ecommerce.LoginErrorValidationTest@5c18016b</td></tr>
+<tr>
+<td title='Ecommerce.ProductErrorValidationTest.productErrorValidationTest()'><b>productErrorValidationTest</b><br>Test class: Ecommerce.ProductErrorValidationTest</td>
+<td></td>
+<td>4</td>
+<td>Ecommerce.ProductErrorValidationTest@6da00fb9</td></tr>
+<tr>
+<td title='Ecommerce.LoginErrorValidationTest.loginErrorValidationTest()'><b>loginErrorValidationTest</b><br>Test class: Ecommerce.LoginErrorValidationTest<br>Parameters: {userPassword=SomePassword123, userEmail=invalidEmailFormat, expectedError=*Enter Valid Email, errorType=textbox}</td>
+<td></td>
+<td>0</td>
+<td>Ecommerce.LoginErrorValidationTest@5c18016b</td></tr>
+<tr>
+<td title='Ecommerce.StandAloneTest.submitOrderTest()'><b>submitOrderTest</b><br>Test class: Ecommerce.StandAloneTest</td>
+<td></td>
+<td>5</td>
+<td>Ecommerce.StandAloneTest@20f12539</td></tr>
+<tr>
+<td title='Ecommerce.LoginErrorValidationTest.loginErrorValidationTest()'><b>loginErrorValidationTest</b><br>Test class: Ecommerce.LoginErrorValidationTest<br>Parameters: {userPassword=R@hulshetty.123644444, userEmail=usman.basharmal123@gmail.com, expectedError=Incorrect email or password., errorType=flyinOut}</td>
+<td></td>
+<td>0</td>
+<td>Ecommerce.LoginErrorValidationTest@5c18016b</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-skipped'>
 <tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
@@ -130,12 +171,8 @@ function toggleAllBoxes() {
 <td><div><pre>java.lang.AssertionError: expected [We forsely fail the funtion to take the screenshot] but found [*Enter Valid Email]
 	at Ecommerce.ScreenShootLoginErrorValidationTest.loginErrorValidationTest(ScreenShootLoginErrorValidationTest.java:76)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1575)
-... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1520843155", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1520843155'><pre>java.lang.AssertionError: expected [We forsely fail the funtion to take the screenshot] but found [*Enter Valid Email]
+... Removed 36 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1753113235", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1753113235'><pre>java.lang.AssertionError: expected [We forsely fail the funtion to take the screenshot] but found [*Enter Valid Email]
 	at org.testng.Assert.fail(Assert.java:111)
 	at org.testng.Assert.failNotEquals(Assert.java:1590)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
@@ -157,26 +194,33 @@ function toggleAllBoxes() {
 	at org.testng.TestRunner.privateRun(TestRunner.java:741)
 	at org.testng.TestRunner.run(TestRunner.java:616)
 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
-	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1575)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 </pre></div></td>
 <td>0</td>
-<td>Ecommerce.ScreenShootLoginErrorValidationTest@5489c777</td></tr>
+<td>Ecommerce.ScreenShootLoginErrorValidationTest@a202ccb</td></tr>
 <tr>
 <td title='Ecommerce.ScreenShootLoginErrorValidationTest.loginErrorValidationTest()'><b>loginErrorValidationTest</b><br>Test class: Ecommerce.ScreenShootLoginErrorValidationTest<br>Parameters: {userPassword=SomePassword123, userEmail=invalidEmailFormat, expectedError=*Enter Valid Email, errorType=textbox}</td>
 <td><div><pre>java.lang.AssertionError: expected [We forsely fail the funtion to take the screenshot] but found [*Enter Valid Email]
 	at Ecommerce.ScreenShootLoginErrorValidationTest.loginErrorValidationTest(ScreenShootLoginErrorValidationTest.java:76)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1575)
-... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1544615685", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1544615685'><pre>java.lang.AssertionError: expected [We forsely fail the funtion to take the screenshot] but found [*Enter Valid Email]
+... Removed 36 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace659763564", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace659763564'><pre>java.lang.AssertionError: expected [We forsely fail the funtion to take the screenshot] but found [*Enter Valid Email]
 	at org.testng.Assert.fail(Assert.java:111)
 	at org.testng.Assert.failNotEquals(Assert.java:1590)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
@@ -198,15 +242,26 @@ function toggleAllBoxes() {
 	at org.testng.TestRunner.privateRun(TestRunner.java:741)
 	at org.testng.TestRunner.run(TestRunner.java:616)
 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
-	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1575)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 </pre></div></td>
 <td>0</td>
-<td>Ecommerce.ScreenShootLoginErrorValidationTest@5489c777</td></tr>
+<td>Ecommerce.ScreenShootLoginErrorValidationTest@a202ccb</td></tr>
 </table><p>
 </body>
 </html>

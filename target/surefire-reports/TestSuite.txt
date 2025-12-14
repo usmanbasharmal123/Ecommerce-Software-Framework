@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 3, Failures: 1, Errors: 0, Skipped: 2, Time elapsed: 37.74 s <<< FAILURE! -- in TestSuite
-Ecommerce.ScreenShootLoginErrorValidationTest.loginErrorValidationTest[{userPassword=SomePassword123, userEmail=invalidEmailFormat, expectedError=*Enter Valid Email, errorType=textbox}](3) -- Time elapsed: 0.548 s <<< FAILURE!
+Tests run: 8, Failures: 1, Errors: 0, Skipped: 2, Time elapsed: 42.80 s <<< FAILURE! -- in TestSuite
+Ecommerce.ScreenShootLoginErrorValidationTest.loginErrorValidationTest[{userPassword=SomePassword123, userEmail=invalidEmailFormat, expectedError=*Enter Valid Email, errorType=textbox}](3) -- Time elapsed: 0.767 s <<< FAILURE!
 java.lang.AssertionError: expected [We forsely fail the funtion to take the screenshot] but found [*Enter Valid Email]
 	at org.testng.Assert.fail(Assert.java:111)
 	at org.testng.Assert.failNotEquals(Assert.java:1590)

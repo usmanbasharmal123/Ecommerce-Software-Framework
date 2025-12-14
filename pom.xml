@@ -79,7 +79,7 @@
   </dependencies>
   <profiles>
   <profile>
-  <id>Regration</id>  
+  <id>Regression</id>  
   <build>
     <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
       <plugins> 
@@ -90,7 +90,7 @@
 <version>3.5.1</version>
 <configuration>
 <suiteXmlFiles>
-<suiteXmlFile>testSuites/testng.xml</suiteXmlFile>
+<suiteXmlFile>testSuites/testNg.xml</suiteXmlFile>
 </suiteXmlFiles>
 </configuration>
 </plugin>

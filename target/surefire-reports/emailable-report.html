@@ -9,19 +9,17 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Suite</th></tr>
-<tr><td><a href="#t0">ScreenShootTest</a></td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num attn">1</td><td class="num">35,700</td><td></td><td></td></tr>
+<tr><td><a href="#t0">MainTest</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">19,791</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">ScreenShootTest</a></td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num attn">1</td><td class="num">31,284</td><td></td><td></td></tr>
+<tr><td><a href="#t2">ErrorValidation</a></td><td class="num">4</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">40,559</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">5</th><th class="num">0</th><th class="num attn">2</th><th class="num attn">1</th><th class="num">91,634</th><th colspan="2"></th></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">ScreenShootTest &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">Ecommerce.ScreenShootLoginErrorValidationTest</td><td><a href="#m0">loginErrorValidationTest</a></td><td rowspan="1">1765554794147</td><td rowspan="1">285</td></tr><tr><th colspan="4">ScreenShootTest &#8212; retried</th></tr><tr class="retriedeven"><td rowspan="2">Ecommerce.ScreenShootLoginErrorValidationTest</td><td><a href="#m1">loginErrorValidationTest</a></td><td rowspan="2">1765554783544</td><td rowspan="2">341</td></tr><tr class="retriedeven"><td><a href="#m2">loginErrorValidationTest</a></td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">MainTest &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">Ecommerce.StandAloneTest</td><td><a href="#m0">submitOrderTest</a></td><td rowspan="1">1765560547840</td><td rowspan="1">6356</td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">ScreenShootTest &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">Ecommerce.ScreenShootLoginErrorValidationTest</td><td><a href="#m1">loginErrorValidationTest</a></td><td rowspan="1">1765560564968</td><td rowspan="1">423</td></tr><tr><th colspan="4">ScreenShootTest &#8212; retried</th></tr><tr class="retriedeven"><td rowspan="2">Ecommerce.ScreenShootLoginErrorValidationTest</td><td><a href="#m2">loginErrorValidationTest</a></td><td rowspan="2">1765560547599</td><td rowspan="2">604</td></tr><tr class="retriedeven"><td><a href="#m3">loginErrorValidationTest</a></td></tr></tbody>
+<tbody id="t2"><tr><th colspan="4">ErrorValidation &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">Ecommerce.LoginErrorValidationTest</td><td><a href="#m4">loginErrorValidationTest</a></td><td rowspan="3">1765560547492</td><td rowspan="3">1198</td></tr><tr class="passedeven"><td><a href="#m5">loginErrorValidationTest</a></td></tr><tr class="passedeven"><td><a href="#m6">loginErrorValidationTest</a></td></tr><tr class="passedodd"><td rowspan="1">Ecommerce.ProductErrorValidationTest</td><td><a href="#m7">productErrorValidationTest</a></td><td rowspan="1">1765560570578</td><td rowspan="1">4459</td></tr></tbody>
 </table>
-<h2>ScreenShootTest</h2><h3 id="m0">Ecommerce.ScreenShootLoginErrorValidationTest#loginErrorValidationTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{userPassword=SomePassword123, userEmail=invalidEmailFormat, expectedError=*Enter Valid Email, errorType=textbox}</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [We forsely fail the funtion to take the screenshot] but found [*Enter Valid Email]
-	at Ecommerce.ScreenShootLoginErrorValidationTest.loginErrorValidationTest(ScreenShootLoginErrorValidationTest.java:76)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1575)
-... Removed 21 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">Ecommerce.ScreenShootLoginErrorValidationTest#loginErrorValidationTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{userPassword=SomePassword123, userEmail=invalidEmailFormat, expectedError=*Enter Valid Email, errorType=textbox}</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [We forsely fail the funtion to take the screenshot] but found [*Enter Valid Email]
+<h2>MainTest</h2><h3 id="m0">Ecommerce.StandAloneTest#submitOrderTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>ScreenShootTest</h2><h3 id="m1">Ecommerce.ScreenShootLoginErrorValidationTest#loginErrorValidationTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{userPassword=SomePassword123, userEmail=invalidEmailFormat, expectedError=*Enter Valid Email, errorType=textbox}</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [We forsely fail the funtion to take the screenshot] but found [*Enter Valid Email]
 	at Ecommerce.ScreenShootLoginErrorValidationTest.loginErrorValidationTest(ScreenShootLoginErrorValidationTest.java:76)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
@@ -37,5 +35,17 @@
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
 	at java.base/java.lang.Thread.run(Thread.java:1575)
 ... Removed 21 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">Ecommerce.ScreenShootLoginErrorValidationTest#loginErrorValidationTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{userPassword=SomePassword123, userEmail=invalidEmailFormat, expectedError=*Enter Valid Email, errorType=textbox}</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [We forsely fail the funtion to take the screenshot] but found [*Enter Valid Email]
+	at Ecommerce.ScreenShootLoginErrorValidationTest.loginErrorValidationTest(ScreenShootLoginErrorValidationTest.java:76)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+... Removed 21 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>ErrorValidation</h2><h3 id="m4">Ecommerce.LoginErrorValidationTest#loginErrorValidationTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{userPassword=R@hulshetty.123644444, userEmail=usman.basharmal123@gmail.com, expectedError=Incorrect email or password., errorType=flyinOut}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">Ecommerce.LoginErrorValidationTest#loginErrorValidationTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{userPassword=SomePassword123, userEmail=invalidEmailFormat, expectedError=*Enter Valid Email, errorType=textbox}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">Ecommerce.LoginErrorValidationTest#loginErrorValidationTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{userPassword=, userEmail=, expectedError=*Email is required, errorType=textbox}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">Ecommerce.ProductErrorValidationTest#productErrorValidationTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

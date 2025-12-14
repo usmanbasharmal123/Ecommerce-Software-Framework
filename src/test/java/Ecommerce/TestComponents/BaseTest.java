@@ -9,10 +9,12 @@ import java.util.List;              // For working with lists
 import java.util.Properties;        // For reading .properties configuration files
 
 import org.apache.commons.io.FileUtils; // Utility class for file operations (copy, read, write)
+import org.openqa.selenium.Dimension;
 import org.openqa.selenium.OutputType;  // Defines screenshot output type
 import org.openqa.selenium.TakesScreenshot; // Interface for capturing screenshots
 import org.openqa.selenium.WebDriver;   // Main Selenium WebDriver interface
 import org.openqa.selenium.chrome.ChromeDriver;   // Chrome browser driver
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;       // Edge browser driver
 import org.openqa.selenium.firefox.FirefoxDriver; // Firefox browser driver
 import org.testng.annotations.AfterMethod;        // TestNG annotation: runs after each test method
@@ -70,12 +72,32 @@ public class BaseTest {
 
         logger.info("Initializing WebDriver for browser: {}", browserName);
 
-        // Launch browser based on configuration
-        if (browserName.equalsIgnoreCase("chrome")) {
-            WebDriverManager.chromedriver().setup(); // Auto-download ChromeDriver
-            driver = new ChromeDriver();             // Launch Chrome
-            logger.debug("ChromeDriver initialized successfully.");
-        } else if (browserName.equalsIgnoreCase("fireFox")) {
+//        // Launch browser based on configuration
+//        if (browserName.contains("chrome")) {
+//            WebDriverManager.chromedriver().setup(); // Auto-download ChromeDriver
+//            ChromeOptions option = new ChromeOptions();
+//            if(browserName.contains("headless")){
+//            	option.addArguments("headless");
+//     }
+//            driver = new ChromeDriver(option);             // Launch Chrome
+////            driver.manage().window().setSize(new Dimension(1440,9000));
+////            option.addArguments("--window-size=1440,900"); 
+//            logger.debug("ChromeDriver initialized successfully.");
+//        }
+        if (browserName.contains("chrome")) {
+        	WebDriverManager.chromedriver().setup();
+            ChromeOptions option = new ChromeOptions();
+           
+
+            if (browserName.contains("headless")) {
+                option.addArguments("--headless=new"); // use new headless mode
+                option.addArguments("--disable-gpu");  // recommended for CI
+                option.addArguments("--window-size=1440,900"); // realistic viewport
+            }
+
+            driver = new ChromeDriver(option);
+        }
+        else if (browserName.equalsIgnoreCase("fireFox")) {
             WebDriverManager.firefoxdriver().setup(); // Auto-download FirefoxDriver
             driver = new FirefoxDriver();             // Launch Firefox
             logger.debug("FirefoxDriver initialized successfully.");
@@ -89,7 +111,10 @@ public class BaseTest {
         }
 
         // Maximize browser window
-        driver.manage().window().maximize();
+        if (!browserName.contains("headless")) {
+            driver.manage().window().maximize();
+        }
+//        driver.manage().window().maximize();
         logger.info("Browser window maximized.");
 
         return driver; // Return driver instance
