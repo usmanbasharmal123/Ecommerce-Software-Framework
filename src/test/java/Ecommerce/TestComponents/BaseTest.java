@@ -73,24 +73,14 @@ public class BaseTest {
         logger.info("Initializing WebDriver for browser: {}", browserName);
 
 //        // Launch browser based on configuration
-//        if (browserName.contains("chrome")) {
-//            WebDriverManager.chromedriver().setup(); // Auto-download ChromeDriver
-//            ChromeOptions option = new ChromeOptions();
-//            if(browserName.contains("headless")){
-//            	option.addArguments("headless");
-//     }
-//            driver = new ChromeDriver(option);             // Launch Chrome
-////            driver.manage().window().setSize(new Dimension(1440,9000));
-////            option.addArguments("--window-size=1440,900"); 
-//            logger.debug("ChromeDriver initialized successfully.");
-//        }
+
         if (browserName.contains("chrome")) {
         	WebDriverManager.chromedriver().setup();
             ChromeOptions option = new ChromeOptions();
            
 
             if (browserName.contains("headless")) {
-                option.addArguments("--headless=new"); // use new headless mode
+                option.addArguments("--headless=new"); // use new headless mode ok
                 option.addArguments("--disable-gpu");  // recommended for CI
                 option.addArguments("--window-size=1440,900"); // realistic viewport
             }
