@@ -89,7 +89,7 @@ public class BaseTest {
         }
         else if (browserName.equalsIgnoreCase("fireFox")) {
             WebDriverManager.firefoxdriver().setup(); // Auto-download FirefoxDriver
-            driver = new FirefoxDriver();             // Launch Firefox browser3
+            driver = new FirefoxDriver();             // Launch Firefox browser5
             logger.debug("FirefoxDriver initialized successfully.");
         } else if (browserName.equalsIgnoreCase("edge")) {
             WebDriverManager.edgedriver().setup(); // Auto-download EdgeDriver
